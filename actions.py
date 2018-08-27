@@ -11,7 +11,7 @@ class ActionWeather(Action):
 		
 	def run(self, dispatcher, tracker, domain):
 		from apixu.client import ApixuClient
-		api_key = '47c2155edf354b36924111624180907' #your apixu key
+		api_key = '' #your apixu key
 		client = ApixuClient(api_key)
 		
 		loc = tracker.get_slot('location')
